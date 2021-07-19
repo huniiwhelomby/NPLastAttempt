@@ -8,14 +8,7 @@
 <body>
   <div id="3d-graph"></div>
 
-  <script type="module">
-    import { UnrealBloomPass } from '//cdn.skypack.dev/three/examples/jsm/postprocessing/UnrealBloomPass.js';
-//
-    const Graph = ForceGraph3D()
-      (document.getElementById('3d-graph'))
-        .jsonUrl('../datasets/miserables.json')
-        .nodeLabel('id')
-        .nodeAutoColorBy('group');
+ 
 
     const bloomPass = new UnrealBloomPass();
     bloomPass.strength = 3;
